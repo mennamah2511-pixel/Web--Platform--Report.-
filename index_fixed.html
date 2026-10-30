@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تقرير عن لغة CSS ودورها في جمال صفحات الويب">
+  <title>CSS Language and Its Role in the Beauty of Web Pages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="الصفحة الرئيسية"><span>&lt;/&gt;</span> CSS</a>
+    <nav aria-label="التنقل الرئيسي">
+      <a href="#intro">المقدمة</a>
+      <a href="#topic">عرض الموضوع</a>
+      <a href="#references">المراجع</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy" dir="ltr">
+        <p class="eyebrow">WEB DESIGN REPORT</p>
+        <h1>CSS Language and Its Role<br>in the Beauty of Web Pages</h1>
+        <p><strong>Student Name:</strong> Menna Allah Mahmoud El-Sayed Abdelwahab</p>
+        <p><strong>University ID:</strong> 2502040</p>
+        <p><strong>Report Title:</strong> CSS Language and Its Role in the Beauty of Web Pages</p>
+      </div>
+      <img src="images/css-laptop.png" alt="حاسوب يعرض شيفرة CSS">
+    </section>
+
+    <div class="content-grid">
+      <div class="main-content">
+        <section id="intro" class="section">
+          <h2><span>1</span> المقدمة</h2>
+          <p>عندما نتصفح موقعًا إلكترونيًا فإننا نرى ألوانًا متناسقة وخطوطًا واضحة وعناصر مرتبة بشكل جذاب. هذا المظهر لا تصنعه لغة HTML وحدها، فهي مسؤولة عن بنية الصفحة ومحتواها فقط، كالعناوين والفقرات والصور. أما الشكل الخارجي للصفحة فتتولاه لغة CSS (اختصار Cascading Style Sheets أي «أوراق الأنماط المتتالية»).</p>
+          <p>يناقش هذا التقرير الفكرة العامة للغة CSS، وكيف تغيّر الألوان والخطوط والتخطيط، وأهميتها في جعل الصفحات جذابة وسهلة الاستخدام.</p>
+        </section>
+
+        <section id="topic" class="section">
+          <h2><span>2</span> عرض الموضوع</h2>
+          <article>
+            <h3>1. ما هي لغة CSS؟</h3>
+            <p>CSS هي لغة تنسيق تُستخدم لوصف طريقة عرض عناصر HTML على الشاشة. بمعنى آخر، HTML تحدد «ماذا» يظهر في الصفحة، وCSS تحدد «كيف» يظهر. ومن أهم فوائدها فصل المحتوى عن التصميم، ما يسمح بتغيير شكل موقع كامل بتعديل ملف واحد دون المساس بالمحتوى.</p>
+            <p>يمكن ربط CSS بالصفحة بثلاث طرق: داخل العنصر نفسه (Inline)، أو داخل وسم style في الصفحة (Internal)، أو في ملف خارجي منفصل بامتداد .css (External). وهذه الأخيرة هي الأفضل في المشاريع لأنها تنظم العمل وتعيد استخدام التنسيق في عدة صفحات.</p>
+            <div class="table-wrap">
+              <table>
+                <caption>طرق ربط CSS بالصفحة</caption>
+                <thead><tr><th>الطريقة</th><th>الوصف</th></tr></thead>
+                <tbody>
+                  <tr><td>Inline</td><td>تتم كتابة التنسيق داخل العنصر نفسه باستخدام خاصية style.</td></tr>
+                  <tr><td>Internal</td><td>يتم وضع التنسيق داخل وسم &lt;style&gt; في الصفحة.</td></tr>
+                  <tr><td>External</td><td>يتم ربط ملف CSS خارجي باستخدام الوسم &lt;link&gt;.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <article>
+            <h3>2. بنية القاعدة في CSS</h3>
+            <p>تتكون القاعدة من «محدد» (Selector) يختار العنصر المراد تنسيقه، ومن «خصائص» (Properties) وقيمها داخل أقواس.</p>
+            <pre dir="ltr"><code dir="ltr">h1 {
+  color: darkblue;
+  font-size: 32px;
+}</code></pre>
+            <p>في هذا المثال يختار المحدد h1 جميع العناوين الرئيسية، ثم يُغيّر لون الخط إلى الأزرق الداكن وحجمه إلى 32 بكسل.</p>
+          </article>
+
+          <article>
+            <h3>3. تغيير الألوان</h3>
+            <p>تتيح CSS التحكم في ألوان النص عبر الخاصية color، وفي ألوان الخلفية عبر background-color. ويمكن كتابة اللون بالاسم (مثل red)، أو بالنظام السداسي (مثل #3366cc)، أو بنظام RGB. اختيار ألوان متناسقة يحسن القراءة ويعبر عن هوية الموقع؛ فمثلًا تعتمد المواقع الرسمية غالبًا ألوانًا هادئة، بينما تستخدم مواقع الألعاب ألوانًا جريئة.</p>
+            <div class="swatches" aria-label="أمثلة لألوان التصميم"><i></i><i></i><i></i><i></i><i></i></div>
+          </article>
+
+          <article>
+            <h3>4. تصميم الخطوط</h3>
+            <p>تتحكم CSS في نوع الخط (font-family) وحجمه (font-size) وسمكه (font-weight) والمسافة بين الأسطر (line-height). كما يمكن تحميل خطوط مخصصة من الإنترنت، مثل خطوط Google Fonts، ما يمنح الموقع طابعًا مميزًا. وللغة العربية أهمية خاصة هنا، إذ يلزم اختيار خطوط واضحة ومريحة للقراءة مثل Cairo أو Tajawal، مع ضبط اتجاه النص ليكون من اليمين إلى اليسار.</p>
+          </article>
+
+          <article>
+            <h3>5. التخطيط وتنظيم العناصر</h3>
+            <p>لكل عنصر في الصفحة «صندوق» (Box Model) يتكون من المحتوى، ثم الحشوة الداخلية (padding)، ثم الحدود (border)، ثم الهامش الخارجي (margin). فهم هذا النموذج أساسي للتحكم في المسافات بين العناصر. وتوفر CSS أدوات حديثة لترتيب العناصر هي Flexbox وGrid، وتستخدمان لبناء تخطيطات مرنة مثل القوائم وشبكات الصور وأقسام الصفحة.</p>
+          </article>
+
+          <article>
+            <h3>6. التصميم المتجاوب</h3>
+            <p>يتصفح الناس المواقع عبر الهواتف والأجهزة اللوحية والحواسيب، ولذلك يجب أن تتكيف الصفحة مع حجم الشاشة. تحقق CSS ذلك عبر «استعلامات الوسائط» (Media Queries) التي تطبق تنسيقات مختلفة بحسب عرض الشاشة. مثال:</p>
+            <pre dir="ltr"><code dir="ltr">@media (max-width: 600px) {
+  body { font-size: 14px; }
+}</code></pre>
+          </article>
+
+          <article>
+            <h3>7. التأثيرات والحركة</h3>
+            <p>تسمح CSS بإضافة لمسات تفاعلية بسيطة دون الحاجة إلى JavaScript، مثل تغيير لون الزر عند مرور المؤشر عليه باستخدام :hover، أو الانتقال السلس بين حالتين باستخدام transition، أو تحريك العناصر باستخدام animation. هذه التفاصيل الصغيرة تجعل تجربة المستخدم أكثر حيوية.</p>
+          </article>
+
+          <article>
+            <h3>8. أهمية CSS في المنصات الإلكترونية</h3>
+            <p>تعتمد المنصات التعليمية والمتاجر الإلكترونية على CSS لتقديم واجهات واضحة وسهلة. فالتصميم الجيد يزيد من ثقة المستخدم وسرعة وصوله إلى ما يريد، ويقلل من أخطاء الاستخدام. كما أن الأطر الجاهزة مثل Bootstrap وTailwind CSS تبنت CSS أساسًا لها لتسريع بناء الواجهات.</p>
+          </article>
+        </section>
+
+        <section id="conclusion" class="section">
+          <h2><span>3</span> الخاتمة</h2>
+          <p>تعد CSS عنصرًا أساسيًا في تطوير الويب، فهي تحول صفحات HTML البسيطة إلى واجهات جذابة ومنظمة ومتجاوبة مع مختلف الأجهزة. ومع أن تعلمها سهل في بدايته، إلا أن إتقانها يفتح المجال لتصميم مواقع احترافية. وينصح كل مبتدئ في تطوير الويب بالتدرب عليها عمليًا عبر بناء صفحات صغيرة وتجربة الخصائص المختلفة.</p>
+        </section>
+
+        <section id="references" class="section">
+          <h2><span>4</span> المراجع</h2>
+          <ol class="references">
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">MDN Web Docs – CSS: Cascading Style Sheets</a></li>
+            <li><a href="https://www.w3schools.com/css/" target="_blank" rel="noopener">W3Schools – CSS Tutorial</a></li>
+            <li><a href="https://www.w3.org/Style/CSS/" target="_blank" rel="noopener">World Wide Web Consortium (W3C) – Cascading Style Sheets</a></li>
+            <li><a href="https://fonts.google.com/" target="_blank" rel="noopener">Google Fonts</a></li>
+          </ol>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <div class="side-card">
+          <h3>✨ ما الذي يجعل صفحات الويب جميلة؟</h3>
+          <ul><li>ألوان متناسقة</li><li>خطوط واضحة</li><li>تصميم منظم</li><li>تجربة مستخدم أفضل</li></ul>
+        </div>
+        <div class="side-card tip">
+          <h3>معلومة سريعة</h3>
+          <p>يساعد فصل CSS عن HTML على تنظيم الكود وتوحيد شكل صفحات الموقع بسهولة.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>إعداد الطالبة: Menna Allah Mahmoud El-Sayed Abdelwahab · University ID: 2502040</footer>
+</body>
+</html>
